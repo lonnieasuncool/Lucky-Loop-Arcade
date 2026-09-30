@@ -1,90 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Snack Shack — quick, affordable snacks for the school day." />
-  <title>The Snack Shack | Quick bites, easy prices</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Larcadia — three beautifully simple games, ready to play.">
+  <title>Larcadia — Free browser games</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="The Snack Shack home">
-      <span class="brand-mark">SS</span>
-      <span>The Snack Shack</span>
-    </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#menu">Menu</a>
-      <a href="#how-it-works">How it works</a>
-      <a href="#visit">Find us</a>
-    </nav>
-    <a class="header-cta" href="#visit">Find us at lunch <span aria-hidden="true">→</span></a>
+    <a class="logo" href="#top" aria-label="Larcadia home"><span class="logo-mark">LA</span><span>Larcadia</span></a>
+    <nav aria-label="Main navigation"><a href="#games">Games</a><a href="reviews.html">Reviews</a><a href="#about">About</a></nav>
+    <span class="free-pill">Free to play</span>
   </header>
-
   <main id="top">
-    <section class="hero section-wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse-dot"></span> Open during lunch · ready in minutes</p>
-        <h1 id="hero-title">Good food.<br /><em>No long line.</em></h1>
-        <p class="hero-text">Affordable snacks and mini meals for the dash between classes. Pick your bite, check the price, and swing by.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#menu">See today's menu <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="#how-it-works">How it works <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="hero-note"><span>⚡</span> Most picks are ready in under 2 minutes</div>
-      </div>
-      <div class="hero-photo-wrap">
-        <img class="hero-photo" src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1100&q=85" alt="Fresh sandwich with greens on a table" />
-        <div class="price-sticker"><strong>Most items</strong><span>under $5</span></div>
-        <div class="photo-caption">Real ingredients. Student-sized prices.</div>
-      </div>
+    <section class="hub-hero" aria-labelledby="hero-title">
+      <div><p class="kicker"><span class="live-dot"></span> Play in your browser</p><h1 id="hero-title">Play something<br><em>great.</em></h1><p class="hero-lede">Fun, simple games for a quick break or a longer session.</p><a class="button button-bright" href="#games">View games <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-art hero-photo" aria-label="Illustration of three game controllers"><img src="assets/larcadia-hero.png" alt="Illustration of three colorful game controllers"><div class="art-label">PLAY YOUR WAY <span>✦</span></div></div>
     </section>
-
-    <section class="menu-section section-wrap" id="menu" aria-labelledby="menu-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Grab something good</p>
-          <h2 id="menu-title">Today's menu</h2>
-        </div>
-        <p class="section-subtitle">Tap a category to find your fastest fit.</p>
-      </div>
-      <div class="filters" role="group" aria-label="Filter menu items">
-        <button class="filter-button active" type="button" data-filter="all">All picks</button>
-        <button class="filter-button" type="button" data-filter="savory">Savory</button>
-        <button class="filter-button" type="button" data-filter="sweet">Sweet</button>
-        <button class="filter-button" type="button" data-filter="drinks">Drinks</button>
-      </div>
-      <div class="menu-grid" id="menu-grid"></div>
-    </section>
-
-    <section class="how-section section-wrap" id="how-it-works" aria-labelledby="how-title">
-      <div class="section-heading compact-heading">
-        <div><p class="eyebrow">Keep it moving</p><h2 id="how-title">Snack in 3 steps</h2></div>
-      </div>
-      <div class="steps-grid">
-        <article class="step"><span class="step-number">01</span><h3>Pick your bite</h3><p>Choose from quick savory, sweet, and sippable favorites.</p></article>
-        <article class="step"><span class="step-number">02</span><h3>Check your total</h3><p>No surprises — every price is right on the menu.</p></article>
-        <article class="step"><span class="step-number">03</span><h3>Grab and go</h3><p>Show your order at the shack and get back to class.</p></article>
-      </div>
-    </section>
-
-    <section class="visit-section section-wrap" id="visit" aria-labelledby="visit-title">
-      <div class="visit-card">
-        <div><p class="eyebrow">Find the shack</p><h2 id="visit-title">See you at lunch.</h2><p>We're set up by the student commons every school day during lunch. Look for the yellow flag.</p></div>
-        <a class="button button-dark" href="https://www.google.com/maps/search/?api=1&query=The+Snack+Shack" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
+    <section class="games-section" id="games" aria-labelledby="games-title"><div class="section-intro"><div><p class="kicker">Games</p><h2 id="games-title">Choose a game</h2></div><p>Play free. No download needed.</p></div><div class="game-grid">
+      <a class="game-card chess-card" href="uno.html"><img class="game-preview" src="assets/uno-preview.png" alt="UNO card game packaging"><div><div class="card-icon uno-icon">+2</div><p class="card-tag">Cards · Solo</p><h3>UNO</h3><p>Match colors and numbers, play wild cards, and be the first to empty your hand.</p></div><span class="play-link">Play UNO <span>↗</span></span></a>
+      <a class="game-card poker-card" href="poker.html"><img class="game-preview" src="assets/poker-preview.png" alt="Poker cards and chips on a green table"><div><div class="card-icon">♥</div><p class="card-tag">Texas Hold'em · Solo</p><h3>Poker</h3><p>Build the best hand from two private cards and five community cards.</p></div><span class="play-link">Play poker <span>↗</span></span></a>
+      <a class="game-card tetris-card" href="tetris.html"><img class="game-preview" src="assets/tetris-preview.png" alt="Colorful Tetris blocks"><div><div class="card-icon tetris-icon"><i></i><i></i><i></i><i></i></div><p class="card-tag">Arcade · Solo</p><h3>Tetris</h3><p>Stack fast, clear lines, and chase a high score that keeps you coming back.</p></div><span class="play-link">Play tetris <span>↗</span></span></a>
+    </div></section>
+    <section class="about-strip" id="about" aria-labelledby="about-title"><span class="about-symbol">✦</span><div><h2 id="about-title">Just play.</h2><p>No downloads. No accounts. Just free games in your browser.</p></div><span class="about-note">Have fun.</span></section>
   </main>
-
-  <footer class="site-footer section-wrap">
-    <div class="brand footer-brand"><span class="brand-mark">SS</span><span>The Snack Shack</span></div>
-    <p>Made for hungry students, by hungry students.</p>
-    <a href="#top">Back to top ↑</a>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer class="site-footer"><span>© 2026 Larcadia</span><span>Take a break. Make a move.</span></footer>
 </body>
 </html>
