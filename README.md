@@ -1,5 +1,5 @@
-# Pixel-Party
+# Lucky-Loop-Arcade
 
-Pixel-Party is a free browser arcade built with plain HTML, CSS, and JavaScript.
+Lucky Loop Arcade is a colorful virtual claw-machine game built with plain HTML, CSS, and JavaScript.
 
-Games include UNO, Texas Hold'em, and Tetris.
+Use the arrow controls to steer the claw, then grab a prize. The game uses virtual credits only.

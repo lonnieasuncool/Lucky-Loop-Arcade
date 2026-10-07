@@ -3,28 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Larcadia — three beautifully simple games, ready to play.">
-  <title>Larcadia — Free browser games</title>
+  <meta name="description" content="Lucky Loop — a virtual claw-machine arcade game.">
+  <title>Lucky Loop Arcade</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="site-header">
-    <a class="logo" href="#top" aria-label="Larcadia home"><span class="logo-mark">LA</span><span>Larcadia</span></a>
-    <nav aria-label="Main navigation"><a href="#games">Games</a><a href="reviews.html">Reviews</a><a href="#about">About</a></nav>
-    <span class="free-pill">Free to play</span>
+    <a class="brand" href="#top"><span class="brand-mark">✦</span><span>LUCKY LOOP <small>ARCADE</small></span></a>
+    <div class="header-status"><span class="status-dot"></span> LIVE MACHINE <span class="divider"></span> VIRTUAL PLAY ONLY</div>
+    <a class="header-link" href="#how-it-works">How it works <span>↓</span></a>
   </header>
-  <main id="top">
-    <section class="hub-hero" aria-labelledby="hero-title">
-      <div><p class="kicker"><span class="live-dot"></span> Play in your browser</p><h1 id="hero-title">Play something<br><em>great.</em></h1><p class="hero-lede">Fun, simple games for a quick break or a longer session.</p><a class="button button-bright" href="#games">View games <span aria-hidden="true">↓</span></a></div>
-      <div class="hero-art hero-photo" aria-label="Illustration of three game controllers"><img src="assets/larcadia-hero.png" alt="Illustration of three colorful game controllers"><div class="art-label">PLAY YOUR WAY <span>✦</span></div></div>
-    </section>
-    <section class="games-section" id="games" aria-labelledby="games-title"><div class="section-intro"><div><p class="kicker">Games</p><h2 id="games-title">Choose a game</h2></div><p>Play free. No download needed.</p></div><div class="game-grid">
-      <a class="game-card chess-card" href="uno.html"><img class="game-preview" src="assets/uno-preview.png" alt="UNO card game packaging"><div><div class="card-icon uno-icon">+2</div><p class="card-tag">Cards · Solo</p><h3>UNO</h3><p>Match colors and numbers, play wild cards, and be the first to empty your hand.</p></div><span class="play-link">Play UNO <span>↗</span></span></a>
-      <a class="game-card poker-card" href="poker.html"><img class="game-preview" src="assets/poker-preview.png" alt="Poker cards and chips on a green table"><div><div class="card-icon">♥</div><p class="card-tag">Texas Hold'em · Solo</p><h3>Poker</h3><p>Build the best hand from two private cards and five community cards.</p></div><span class="play-link">Play poker <span>↗</span></span></a>
-      <a class="game-card tetris-card" href="tetris.html"><img class="game-preview" src="assets/tetris-preview.png" alt="Colorful Tetris blocks"><div><div class="card-icon tetris-icon"><i></i><i></i><i></i><i></i></div><p class="card-tag">Arcade · Solo</p><h3>Tetris</h3><p>Stack fast, clear lines, and chase a high score that keeps you coming back.</p></div><span class="play-link">Play tetris <span>↗</span></span></a>
-    </div></section>
-    <section class="about-strip" id="about" aria-labelledby="about-title"><span class="about-symbol">✦</span><div><h2 id="about-title">Just play.</h2><p>No downloads. No accounts. Just free games in your browser.</p></div><span class="about-note">Have fun.</span></section>
+  <main id="top" class="page-shell">
+    <section class="hero-copy"><p class="eyebrow"><span class="eyebrow-line"></span> PRIZE BAY 04 · READY</p><h1>One more<br><em>try.</em></h1><p class="intro">Reach for the rarest prize in the room. The claw is close. Your timing is everything.</p><div class="hero-actions"><a class="primary-button" href="#machine">Play the machine <span>↘</span></a><span class="microcopy">Uses virtual credits · no purchase required</span></div></section>
+    <section class="machine-wrap" id="machine" aria-labelledby="machine-title"><div class="machine-topbar"><span class="machine-name" id="machine-title">LUCKY LOOP <b>★</b></span><span class="machine-id">LL-04 / ONLINE</span></div><div class="cabinet"><div class="marquee"><span>PRIZE</span><strong>DROP</strong><span>★</span></div><div class="glass-frame"><div class="glass-shine"></div><div class="prize-pile" aria-label="Prize pile"><div class="plush plush-pink">✦</div><div class="plush plush-yellow">★</div><div class="plush plush-blue">●</div><div class="plush plush-purple">♥</div><div class="plush plush-orange">✿</div><div class="ticket ticket-one">$5</div><div class="ticket ticket-two">LUCKY</div></div><div class="rail"></div><div class="claw-line" id="claw-line"><div class="claw"><i></i><i></i><i></i></div></div><div class="drop-zone"><span>DROP ZONE</span></div></div><div class="machine-controls"><div class="credit-panel"><span class="label">CREDITS</span><strong id="credits">12</strong><span class="credit-note">virtual tokens</span></div><div class="move-controls" aria-label="Move claw"><button class="move-button" id="move-left" type="button" aria-label="Move claw left">←</button><div class="joystick"><div class="stick"></div><div class="knob"></div></div><button class="move-button" id="move-right" type="button" aria-label="Move claw right">→</button></div><button class="play-button" id="play-button" type="button"><span class="button-light"></span><b>GRAB</b><small>1 CREDIT</small></button></div></div><p class="machine-caption"><span class="pulse"></span> Steer with ← → or tap the buttons <span class="caption-right">then tap GRAB</span></p></section>
+    <section class="stats-row" aria-label="Your session stats"><div class="stat-card"><span>WINS</span><strong id="wins">0</strong><small>prizes claimed</small></div><div class="stat-card stat-loss"><span>LOSSES</span><strong id="losses">0</strong><small>close calls</small></div><div class="stat-card stat-spend"><span>SPENT</span><strong id="spent">0</strong><small>virtual credits</small></div><div class="stat-card stat-streak"><span>BEST STREAK</span><strong id="streak">0</strong><small>in a row</small></div></section>
+    <section class="how-section" id="how-it-works"><div><p class="eyebrow">THE LOOP</p><h2>Almost is<br><em>the point.</em></h2></div><div class="steps"><div class="step"><span>01</span><h3>Load a credit</h3><p>Every play costs one virtual token. You start with 12.</p></div><div class="step"><span>02</span><h3>Chase the drop</h3><p>Hit GRAB and watch the claw make its move.</p></div><div class="step"><span>03</span><h3>Try again</h3><p>Wins are rare. The next one could be yours.</p></div></div></section>
   </main>
-  <footer class="site-footer"><span>© 2026 Larcadia</span><span>Take a break. Make a move.</span></footer>
+  <footer class="site-footer"><span>LUCKY LOOP ARCADE</span><span>Made for the thrill of the near miss.</span></footer><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="script.js"></script>
 </body>
 </html>
